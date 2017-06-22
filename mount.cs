@@ -24,7 +24,7 @@ public override bool Buff()
 	// Dont break casting
 	if (this.Player.IsCasting == "Swift Palomino") return false;
 	// use mount if target is far away, or have not gotten a new target. testing other meathods.
-	if (!this.Player.GotBuff("Swift Palomino") && this.Target.DistanceToPlayer >= 40)
+	if (!this.Player.GotBuff("Swift Palomino") && (this.Target.DistanceToPlayer >= 45 || this.Target.HealthPercent <= 0))
   {
 		this.Player.UseItem("Swift Palomino");
 		return false;
