@@ -25,7 +25,7 @@ namespace something
             }
         }
 		
-		public string mountname = "Gray Kodo"
+		public string mountname = "Swift Horse";
 		
 		public override void PreFight() 
 		{
